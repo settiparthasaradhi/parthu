@@ -1,9 +1,27 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+//import axios from 'axios';
 import PieQ from './PieQ';
 import Result from './Result';
 import './MainResult.css';
 
 const MainResult = ({ score, correctAnswers, wrongAnswers }) => {
+  // useEffect(() => {
+  //   const sendData = async () => {
+  //     try {
+  //       const response = await axios.post('https://your-backend-url.com/api/results', {
+  //         totalQuestions: score,
+  //         correctAnswers: correctAnswers,
+  //         wrongAnswers: wrongAnswers
+  //       });
+  //       console.log('Data sent successfully:', response.data);
+  //     } catch (error) {
+  //       console.error('Error sending data:', error);
+  //     }
+  //   };
+
+  //   sendData();
+  // }, [score, correctAnswers, wrongAnswers]);
+
   return (
     <div>
       <h1 className='main-result'>Quiz Results</h1>
