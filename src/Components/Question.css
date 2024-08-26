@@ -53,6 +53,12 @@
     color: #ffffff;
 }
 
+/* State when question is marked for review */
+.question-number.reviewed {
+    background-color: yellow; /* Highlight in yellow for reviewed questions */
+    color: #181819; /* Retain the original text color */
+}
+
 /* Responsive Styles */
 @media (max-width: 768px) {
     .question-container {

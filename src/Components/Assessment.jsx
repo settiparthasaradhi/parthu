@@ -95,7 +95,8 @@ const Assessment = ({questions} ) => {
           <Question
             questions={questions}
             onQuestionNumberClick={onQuestionNumberClick}
-            answerInd={answerInd}  
+            answerInd={answerInd} 
+            reviewedQuestions={reviewedQuestions} 
           />
         </div>
 
